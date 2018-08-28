@@ -33,10 +33,6 @@
             </div>
           </div>
         </form>
-
-
-
-
       </div>
       <!-- Buttons -->
 
@@ -49,6 +45,7 @@
               <th><abbr title="Navn"><i class="fas fa-user" aria-hidden="true"></i></abbr></th>
               <th><abbr title="Email"><i class="fas fa-at" aria-hidden="true"></i></abbr></th>
               <th><abbr title="Telefon"><i class="fas fa-phone" aria-hidden="true"></i></abbr></th>
+              <th><abbr title="Forening"><i class="fas fa-building" aria-hidden="true"></i></abbr></th>
               <th><abbr title="Tshirt"><i class="fas fa-tshirt" aria-hidden="true"></i></abbr></th>
               <th><abbr title="Points"><i class="fas fa-coins" aria-hidden="true"></i></abbr></th>
               <th><abbr title="Edit"><i class="fas fa-user-edit"></i></i></abbr></th>

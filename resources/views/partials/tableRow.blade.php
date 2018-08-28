@@ -3,12 +3,15 @@
   <td>{{ $member->name }}</td>
   <td>{{ $member->email }}</td>
   <td>{{ $member->phone }}</td>
+  <td>{{ $member->organization }}</td>
   <td>{{ $member->size }}</td>
   <td>{{ $member->points }}</td>
   <td>
-    <button type="button" class="button is-outlined is-small">
-      <a href="{{ action('HomeController@edit', $member->id) }}">Ændre</a>
-    </button>
+      <a
+        href="{{ action('HomeController@edit', $member->id) }}"
+        type="button" class="button is-outlined is-small">
+        Ændre
+      </a>
   </td>
   <td>
     <form class="deleteForm" action="{{ action('HomeController@destroy', $member->id)}}" method="post">

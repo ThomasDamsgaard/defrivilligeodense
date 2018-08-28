@@ -18,6 +18,7 @@ $factory->define(App\Member::class, function (Faker $faker) {
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'phone' => $faker->e164PhoneNumber,
+        'organization' => $faker->jobTitle,
         'size' => $faker->randomLetter,
         'points' => rand(0, 100),
     ];

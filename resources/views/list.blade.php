@@ -14,7 +14,7 @@
           <thead>
             <tr>
               <th scope="col">Navn</th>
-              <th scope="col">Spejder</th>
+              <th scope="col">Forening</th>
               <th scope="col">Opgave</th>
             </tr>
           </thead>
@@ -25,7 +25,9 @@
               <td>
                 {{$userName->name}}
               </td>
-              <td></td>
+              <td>
+                {{$userName->organization}}
+              </td>
               <td></td>
             </tr>
             @endforeach

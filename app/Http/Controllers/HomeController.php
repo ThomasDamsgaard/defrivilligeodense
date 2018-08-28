@@ -41,6 +41,7 @@ class HomeController extends Controller
           'name' => 'required|max:255',
           'email' => 'required',
           'phone' => 'required',
+          'organization' => 'required',
           'size' => 'required',
           'points' => 'required'
         ]);
@@ -52,6 +53,7 @@ class HomeController extends Controller
           'name' => request('name'),
           'email' => request('email'),
           'phone' => request('phone'),
+          'organization' => request('organization'),
           'size' => request('size'),
           'points' => request('points')
         ]);
@@ -72,6 +74,7 @@ class HomeController extends Controller
           'name' => 'required',
           'email' => 'required',
           'phone' => 'required',
+          'organization' => 'required',
           'size' => 'required',
           'points' => 'required'
         ]);
@@ -80,6 +83,7 @@ class HomeController extends Controller
         $member->name = $request->get('name');
         $member->email = $request->get('email');
         $member->phone = $request->get('phone');
+        $member->organization = $request->get('organization');
         $member->size = $request->get('size');
         $member->points = $request->get('points');
 
