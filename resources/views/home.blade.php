@@ -118,6 +118,7 @@ var refs = {
       $('#addPointsForm').submit();
     });
 
+    //Generate PDF
     $('#pdf').click(function(e) {
 
       e.preventDefault();

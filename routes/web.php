@@ -34,8 +34,8 @@ Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::get('/home', 'HomeController@index');
 Route::post('/home', 'HomeController@store');
-Route::post('/addpoints', 'HomeController@addPoints')->name('addpoints');
 Route::get('/home/{id}', 'HomeController@edit');
 Route::patch('/home/{id}', 'HomeController@update');
 Route::delete('/home/{id}', 'HomeController@destroy');
+Route::post('/addpoints', 'HomeController@addPoints')->name('addpoints');
 Route::post('/pdf', 'HomeController@pdf')->name('pdfusers');
