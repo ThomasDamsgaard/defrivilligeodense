@@ -71,6 +71,16 @@
               </div>
 
               <div class="field">
+                <label class="label">Cardigan</label>
+                <div class="control has-icons-left has-icons-right">
+                  <input class="input" type="text" placeholder="Cardigan" name="sweatsize" value="{{ $member->sweatsize }}" required>
+                  <span class="icon is-small is-left">
+                    <i class="fas fa-user-secret"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="field">
                 <label class="label">Points</label>
                 <div class="control has-icons-left has-icons-right">
                   <input class="input" type="number" placeholder="Points" name="points" value="{{ $member->points }}" required>

@@ -8,6 +8,10 @@
       <!-- Buttons -->
       <div class="buttons is-centered">
 
+        <button class="button is-primary" type="button" onclick="location.reload()">
+          Nulstil
+        </button>
+
         <button class="button is-success" type="button" onclick="refs.add.open()">
           Tilføj medlem
         </button>
@@ -47,6 +51,7 @@
               <th><abbr title="Telefon"><i class="fas fa-phone" aria-hidden="true"></i></abbr></th>
               <th><abbr title="Forening"><i class="fas fa-building" aria-hidden="true"></i></abbr></th>
               <th><abbr title="Tshirt"><i class="fas fa-tshirt" aria-hidden="true"></i></abbr></th>
+              <th><abbr title="Cardigan"><i class="fas fa-user-secret" aria-hidden="true"></i></abbr></th>
               <th><abbr title="Points"><i class="fas fa-coins" aria-hidden="true"></i></abbr></th>
               <th><abbr title="Edit"><i class="fas fa-user-edit"></i></i></abbr></th>
               <th><abbr title="Delete"><i class="fas fa-trash"></i></i></abbr></th>

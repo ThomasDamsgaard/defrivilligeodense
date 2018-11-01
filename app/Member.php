@@ -12,6 +12,7 @@ class Member extends Model
       'phone',
       'organization',
       'size',
+      'sweatsize',
       'points'
   ];
 }

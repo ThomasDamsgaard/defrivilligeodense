@@ -43,6 +43,7 @@ class HomeController extends Controller
           'phone' => 'required',
           'organization' => 'required',
           'size' => 'required',
+          'sweatsize' => 'required',
           'points' => 'required'
         ]);
 
@@ -55,6 +56,7 @@ class HomeController extends Controller
           'phone' => request('phone'),
           'organization' => request('organization'),
           'size' => request('size'),
+          'sweatsize' => request('sweatsize'),
           'points' => request('points')
         ]);
 
@@ -76,6 +78,7 @@ class HomeController extends Controller
           'phone' => 'required',
           'organization' => 'required',
           'size' => 'required',
+          'sweatsize' => 'required',
           'points' => 'required'
         ]);
 
@@ -85,6 +88,7 @@ class HomeController extends Controller
         $member->phone = $request->get('phone');
         $member->organization = $request->get('organization');
         $member->size = $request->get('size');
+        $member->sweatsize = $request->get('sweatsize');
         $member->points = $request->get('points');
 
         $member->save();
@@ -124,7 +128,7 @@ class HomeController extends Controller
             ->first();
         }
 
-        $pdf = PDF::loadView('list', compact('data'));
+        $pdf = PDF::loadView('pdf_list', compact('data'));
         return $pdf->download('liste.pdf');
     }
 }

@@ -5,6 +5,7 @@
   <td>{{ $member->phone }}</td>
   <td>{{ $member->organization }}</td>
   <td>{{ $member->size }}</td>
+  <td>{{ $member->sweatsize }}</td>
   <td>{{ $member->points }}</td>
   <td>
       <a

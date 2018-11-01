@@ -17,6 +17,10 @@
         </li>
 
         <li class="panel-block">
+          <label class="column is-2"><b>Cardigan</b></label>{{ $member->sweatsize }}
+        </li>
+
+        <li class="panel-block">
           <label class="column is-2"><b>Points</b></label>{{ $member->points }}
         </li>
         <!-- Content -->
